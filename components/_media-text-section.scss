@@ -1,0 +1,23 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+.media-text-section {
+    @extend %section;
+    .wrapper {
+        @extend %wrap;
+        display: flex;
+        // flex-wrap: wrap;
+        .card {
+            @extend %w-50;
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+            .inner-card{
+                .b-text {
+                  font-weight: var.$font-weight-bold;
+                }
+            }
+        }
+    }
+}

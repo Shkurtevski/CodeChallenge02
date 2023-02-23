@@ -1,0 +1,40 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+.banner-section {
+  @extend %section;
+  min-height: 100vh;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  .wrapper {
+    @extend %wrap;
+    .content {
+      @extend %w-50;
+      p {
+        text-transform: var.$text-transform-uppercase;
+      }
+      h1 {
+        text-transform: var.$text-transform-capitalize;
+      }
+      button {
+        text-transform: var.$text-transform-capitalize;
+        padding: var.$gutter-base * 0.3 var.$gutter-base * 1.5;
+        color: var.$text-color-secondary;
+        font-weight: var.$font-weight-bold;
+        background-color: var.$background-color-primary;
+        border-radius: var.$border-radius;
+        border: none;
+        cursor: pointer;
+        &:hover {
+          color: var.$background-color-primary;
+          background-color: transparent;
+          border: 1px solid var.$background-color-primary;
+          transition: 0.4s;
+        }
+      }
+    }
+  }
+}

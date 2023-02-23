@@ -1,0 +1,33 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+.boxes-wrapper {
+  @extend %section;
+  background-color: var.$background-color-secondary;
+  .wrapper {
+    @extend %wrap;
+    display: flex;
+    .card {
+      @extend %card;
+      background-color: var.$background-color-base;
+      border-radius: var.$border-radius;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+      .inner-card {
+        @extend %wrap;
+        border-radius: var.$border-radius;
+        &:last-child {
+          padding-bottom: var.$gutter-base * 0.53332;
+        }
+        i {
+          font-size: var.$gutter-base * 2;
+          padding: var.$gutter-base * 1 0 var.$gutter-base * 0.53332 0;
+          color: var.$background-color-primary;
+        }
+      }
+    }
+  }
+}

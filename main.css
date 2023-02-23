@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.grid-section, .media-text-section, .boxes-wrapper, .banner-section {
+  padding-top: 4.6875rem;
+  padding-bottom: 4.6875rem;
+}
+@media (max-width: 768px) {
+  .grid-section, .media-text-section, .boxes-wrapper, .banner-section {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+}
+@media (max-width: 425px) {
+  .grid-section, .media-text-section, .boxes-wrapper, .banner-section {
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+  }
+}
+
+.grid-section .wrapper, .media-text-section .wrapper, .boxes-wrapper .wrapper, .boxes-wrapper .wrapper .card .inner-card, .banner-section .wrapper {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 768px) {
+  .grid-section .wrapper, .media-text-section .wrapper, .boxes-wrapper .wrapper, .boxes-wrapper .wrapper .card .inner-card, .banner-section .wrapper {
+    width: 100%;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+.grid-section .wrapper .card-wrapper .card, .boxes-wrapper .wrapper .card {
+  width: 33.333%;
+  max-width: 100%;
+}
+
+.media-text-section .wrapper .card, .banner-section .wrapper .content {
+  width: 50%;
+  max-width: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #707070;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+  color: #000;
+  margin-bottom: 0.9375rem;
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3.125rem;
+}
+@media (max-width: 425px) {
+  h1 {
+    font-size: 2.0625rem;
+  }
+}
+
+h2 {
+  font-size: 2.0625rem;
+}
+@media (max-width: 425px) {
+  h2 {
+    font-size: 1.75rem;
+  }
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+ul {
+  line-height: 2;
+  list-style-type: circle;
+}
+
+.banner-section {
+  min-height: 100vh;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.banner-section .wrapper .content p {
+  text-transform: uppercase;
+}
+.banner-section .wrapper .content h1 {
+  text-transform: capitalize;
+}
+.banner-section .wrapper .content button {
+  text-transform: capitalize;
+  padding: 0.5625rem 2.8125rem;
+  color: #FFF;
+  font-weight: 600;
+  background-color: #e80566;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.banner-section .wrapper .content button:hover {
+  color: #e80566;
+  background-color: transparent;
+  border: 1px solid #e80566;
+  transition: 0.4s;
+}
+
+.boxes-wrapper {
+  background-color: #f6f6f6;
+}
+.boxes-wrapper .wrapper {
+  display: flex;
+}
+.boxes-wrapper .wrapper .card {
+  background-color: #FFF;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+.boxes-wrapper .wrapper .card:not(:last-child) {
+  margin-right: 20px;
+}
+.boxes-wrapper .wrapper .card .inner-card {
+  border-radius: 5px;
+}
+.boxes-wrapper .wrapper .card .inner-card:last-child {
+  padding-bottom: 0.999975rem;
+}
+.boxes-wrapper .wrapper .card .inner-card i {
+  font-size: 3.75rem;
+  padding: 1.875rem 0 0.999975rem 0;
+  color: #e80566;
+}
+
+.media-text-section .wrapper {
+  display: flex;
+}
+.media-text-section .wrapper .card:not(:last-child) {
+  margin-right: 20px;
+}
+.media-text-section .wrapper .card .inner-card .b-text {
+  font-weight: 600;
+}
+
+.grid-section .wrapper .card-wrapper {
+  max-width: 100%;
+  display: flex;
+}
+.grid-section .wrapper .card-wrapper .card:not(:last-child) {
+  margin-right: 20px;
+}/*# sourceMappingURL=main.css.map */
