@@ -188,4 +188,20 @@ ul {
 }
 .grid-section .wrapper .card-wrapper .card:not(:last-child) .inner-card .inner-card-text {
   padding-bottom: 1.875rem;
+}
+.grid-section .wrapper .card-wrapper .card:not(:last-child) .inner-card .inner-card-text button {
+  text-transform: capitalize;
+  padding: 0.5625rem 2.8125rem;
+  color: #FFF;
+  font-weight: 600;
+  background-color: #e80566;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.grid-section .wrapper .card-wrapper .card:not(:last-child) .inner-card .inner-card-text button:hover {
+  color: #e80566;
+  background-color: transparent;
+  border: 1px solid #e80566;
+  transition: 0.4s;
 }/*# sourceMappingURL=main.css.map */

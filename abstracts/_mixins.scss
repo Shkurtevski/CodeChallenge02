@@ -44,6 +44,26 @@
   }
 }
 
+// custom mixins
+@mixin btn {
+  button {
+    text-transform: var.$text-transform-capitalize;
+    padding: var.$gutter-base * 0.3 var.$gutter-base * 1.5;
+    color: var.$text-color-secondary;
+    font-weight: var.$font-weight-bold;
+    background-color: var.$background-color-primary;
+    border-radius: var.$border-radius;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      color: var.$background-color-primary;
+      background-color: transparent;
+      border: 1px solid var.$background-color-primary;
+      transition: 0.4s;
+    }
+  }
+}
+
 %section {
   padding-top: (var.$gutter-base * 2.5);
   padding-bottom: (var.$gutter-base * 2.5);
@@ -71,14 +91,14 @@
   }
 }
 
-// custom-mixins
+// customs
 
 %card {
   width: 33.333%;
   max-width: 100%;
 }
 
-%w-50{
+%w-50 {
   width: 50%;
   max-width: 100%;
 }

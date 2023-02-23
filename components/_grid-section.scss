@@ -17,11 +17,12 @@
           margin-right: 20px;
           .inner-card {
             img {
-                padding-bottom: var.$gutter-base * 1;
+              padding-bottom: var.$gutter-base * 1;
             }
             .inner-card-text {
               @extend %wrap;
               padding-bottom: var.$gutter-base * 1;
+              @include mix.btn;
             }
           }
         }
