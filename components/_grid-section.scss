@@ -4,6 +4,7 @@
 
 .grid-section {
   @extend %section;
+  background-color: var.$background-color-secondary;
   .wrapper {
     @extend %wrap;
     .card-wrapper {
@@ -11,8 +12,18 @@
       display: flex;
       .card {
         @extend %card;
+        background-color: var.$background-color-base;
         &:not(:last-child) {
           margin-right: 20px;
+          .inner-card {
+            img {
+                padding-bottom: var.$gutter-base * 1;
+            }
+            .inner-card-text {
+              @extend %wrap;
+              padding-bottom: var.$gutter-base * 1;
+            }
+          }
         }
       }
     }

@@ -37,13 +37,13 @@ img {
   }
 }
 
-.grid-section .wrapper, .media-text-section .wrapper, .boxes-wrapper .wrapper, .boxes-wrapper .wrapper .card .inner-card, .banner-section .wrapper {
+.grid-section .wrapper, .grid-section .wrapper .card-wrapper .card:not(:last-child) .inner-card .inner-card-text, .media-text-section .wrapper, .boxes-wrapper .wrapper, .boxes-wrapper .wrapper .card .inner-card, .banner-section .wrapper {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
 @media (max-width: 768px) {
-  .grid-section .wrapper, .media-text-section .wrapper, .boxes-wrapper .wrapper, .boxes-wrapper .wrapper .card .inner-card, .banner-section .wrapper {
+  .grid-section .wrapper, .grid-section .wrapper .card-wrapper .card:not(:last-child) .inner-card .inner-card-text, .media-text-section .wrapper, .boxes-wrapper .wrapper, .boxes-wrapper .wrapper .card .inner-card, .banner-section .wrapper {
     width: 100%;
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -170,10 +170,22 @@ ul {
   font-weight: 600;
 }
 
+.grid-section {
+  background-color: #f6f6f6;
+}
 .grid-section .wrapper .card-wrapper {
   max-width: 100%;
   display: flex;
 }
+.grid-section .wrapper .card-wrapper .card {
+  background-color: #FFF;
+}
 .grid-section .wrapper .card-wrapper .card:not(:last-child) {
   margin-right: 20px;
+}
+.grid-section .wrapper .card-wrapper .card:not(:last-child) .inner-card img {
+  padding-bottom: 1.875rem;
+}
+.grid-section .wrapper .card-wrapper .card:not(:last-child) .inner-card .inner-card-text {
+  padding-bottom: 1.875rem;
 }/*# sourceMappingURL=main.css.map */
