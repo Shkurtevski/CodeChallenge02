@@ -1,0 +1,25 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+.footer {
+  @extend %section;
+  background-color: var.$background-color-primary;
+  .wrapper {
+    @extend %wrap;
+    display: flex;
+    justify-content: center;
+    .content {
+      a {
+        margin-right: var.$gutter-base * 1.5;
+        &:not(:last-child) {
+          margin-right: var.$gutter-base * 1;
+        }
+        i {
+          font-size: var.$gutter-base * 1.5;
+          color: var.$text-color-secondary;
+        }
+      }
+    }
+  }
+}

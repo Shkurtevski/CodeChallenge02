@@ -20,30 +20,30 @@ img {
   max-width: 100%;
 }
 
-.grid-section, .media-text-section, .boxes-wrapper, .banner-section {
+.footer, .grid-section, .media-text-section, .boxes-wrapper, .banner-section {
   padding-top: 4.6875rem;
   padding-bottom: 4.6875rem;
 }
 @media (max-width: 768px) {
-  .grid-section, .media-text-section, .boxes-wrapper, .banner-section {
+  .footer, .grid-section, .media-text-section, .boxes-wrapper, .banner-section {
     padding-top: 3.75rem;
     padding-bottom: 3.75rem;
   }
 }
 @media (max-width: 425px) {
-  .grid-section, .media-text-section, .boxes-wrapper, .banner-section {
+  .footer, .grid-section, .media-text-section, .boxes-wrapper, .banner-section {
     padding-top: 1.875rem;
     padding-bottom: 1.875rem;
   }
 }
 
-.grid-section .wrapper, .grid-section .wrapper .card-wrapper .card:not(:last-child) .inner-card .inner-card-text, .media-text-section .wrapper, .boxes-wrapper .wrapper, .boxes-wrapper .wrapper .card .inner-card, .banner-section .wrapper {
+.footer .wrapper, .grid-section .wrapper, .grid-section .wrapper .card-wrapper .card:not(:last-child) .inner-card .inner-card-text, .media-text-section .wrapper, .boxes-wrapper .wrapper, .boxes-wrapper .wrapper .card .inner-card, .banner-section .wrapper {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
 @media (max-width: 768px) {
-  .grid-section .wrapper, .grid-section .wrapper .card-wrapper .card:not(:last-child) .inner-card .inner-card-text, .media-text-section .wrapper, .boxes-wrapper .wrapper, .boxes-wrapper .wrapper .card .inner-card, .banner-section .wrapper {
+  .footer .wrapper, .grid-section .wrapper, .grid-section .wrapper .card-wrapper .card:not(:last-child) .inner-card .inner-card-text, .media-text-section .wrapper, .boxes-wrapper .wrapper, .boxes-wrapper .wrapper .card .inner-card, .banner-section .wrapper {
     width: 100%;
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -55,7 +55,7 @@ img {
   max-width: 100%;
 }
 
-.media-text-section .wrapper .card, .banner-section .wrapper .content {
+.grid-section .wrapper .text-content, .media-text-section .wrapper .card, .banner-section .wrapper .content {
   width: 50%;
   max-width: 100%;
 }
@@ -204,4 +204,22 @@ ul {
   background-color: transparent;
   border: 1px solid #e80566;
   transition: 0.4s;
+}
+
+.footer {
+  background-color: #e80566;
+}
+.footer .wrapper {
+  display: flex;
+  justify-content: center;
+}
+.footer .wrapper .content a {
+  margin-right: 2.8125rem;
+}
+.footer .wrapper .content a:not(:last-child) {
+  margin-right: 1.875rem;
+}
+.footer .wrapper .content a i {
+  font-size: 2.8125rem;
+  color: #FFF;
 }/*# sourceMappingURL=main.css.map */

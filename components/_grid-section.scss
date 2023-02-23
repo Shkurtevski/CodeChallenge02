@@ -7,6 +7,9 @@
   background-color: var.$background-color-secondary;
   .wrapper {
     @extend %wrap;
+    .text-content {
+        @extend %w-50;
+    }
     .card-wrapper {
       max-width: 100%;
       display: flex;
